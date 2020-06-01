@@ -1,75 +1,49 @@
 import React from 'react';
+import * as ReactBootStrap from 'react-bootstrap';
 
 
 function Navbar() {
 
-    const logindropdown = {
-        color: 'red',
-      }; 
-
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand">Fuzzy Friend Finder
-            {/* <img src="./images/favicon-32x32.png" width="30" height="30" alt=""></img> */}
-            </a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">About Us</a>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Services </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item" href="#">Veterinary Services</a>
-                            <a className="dropdown-item" href="#">Obedience Training</a>
-                            <a className="dropdown-item" href="#">Pet Grooming</a>
-                            <a className="dropdown-item" href="#">Surrender Services</a>
-                            <a className="dropdown-item" href="#">End of Life Services</a>
-                        </div>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Fuzzy Friends </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item" href="#">Foster Needs</a>
-                            <a className="dropdown-item" href="#">Adoptable Dogs</a>
-                            <a className="dropdown-item" href="#">Adoptable Cats</a>
-                            <a className="dropdown-item" href="#">Successful Adoptions</a>
-                        </div>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Donate</a>
-                    </li>
-                    <li className="nav-item dropdown involved">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Become Involved </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item" href="#">Adoption</a>
-                            <a className="dropdown-item" href="#">Volunteering</a>
-                            <a className="dropdown-item" href="#">Fostering</a>
-                            <a className="dropdown-item" href="#">Sponsership</a>
-                            <a className="dropdown-item" href="#">Career Opportunities</a>
-                        </div>
-                    </li>
-                    <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" style = {logindropdown} role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Log in </a>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a className="dropdown-item" href="#">Future Adopter</a>
-                            <a className="dropdown-item" href="#">Volunteer</a>
-                            <a className="dropdown-item" href="#">Employee</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <ReactBootStrap.Navbar.Brand href="#home">Fuzzy Friend Finder</ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
+                <ReactBootStrap.Nav className="mr-auto">
+                    <ReactBootStrap.Nav.Link href="#home">Home</ReactBootStrap.Nav.Link>
+                    <ReactBootStrap.Nav.Link href="#about">About Us</ReactBootStrap.Nav.Link>
+                    <ReactBootStrap.NavDropdown title="Services" id="collasible-nav-dropdown">
+                        <ReactBootStrap.NavDropdown.Item href="#action/3.1">Veterinary Services</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/3.2">Obedience Training</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/3.3">Pet Grooming</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/3.4">Surrender Services</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/3.5">Support Services</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/3.6">End of Life Services</ReactBootStrap.NavDropdown.Item>
+                    </ReactBootStrap.NavDropdown>
+                    <ReactBootStrap.NavDropdown title="Fuzzy Friends" id="collasible-nav-dropdown">
+                        <ReactBootStrap.NavDropdown.Item href="#action/4.1">Foster Needs</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/4.2">Adoptable Dogs</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/4.3">Adoptable Cats</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/4.4">Successful Adoptions</ReactBootStrap.NavDropdown.Item>
+                    </ReactBootStrap.NavDropdown>
+                    <ReactBootStrap.Nav.Link href="#Donate">Donate</ReactBootStrap.Nav.Link>
+                </ReactBootStrap.Nav>
+                <ReactBootStrap.Nav>
+                    <ReactBootStrap.NavDropdown title="Become Involved" id="collasible-nav-dropdown">
+                        <ReactBootStrap.NavDropdown.Item href="#action/5.1">Adoption</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/5.2">Volunteering</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/5.3">Fostering</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/5.4">Sponsership</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/5.5">Career Opportunities</ReactBootStrap.NavDropdown.Item>
+                    </ReactBootStrap.NavDropdown>
+                    <ReactBootStrap.NavDropdown title="Log In" id="collasible-nav-dropdown">
+                        <ReactBootStrap.NavDropdown.Item href="#action/6.1"> Future Adoption</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/6.2">Volunteer/Foster</ReactBootStrap.NavDropdown.Item>
+                        <ReactBootStrap.NavDropdown.Item href="#action/6.3">Employee</ReactBootStrap.NavDropdown.Item>
+                    </ReactBootStrap.NavDropdown>
+                </ReactBootStrap.Nav>
+            </ReactBootStrap.Navbar.Collapse>
+        </ReactBootStrap.Navbar>
     )
 }
 
