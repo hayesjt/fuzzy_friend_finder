@@ -10,6 +10,7 @@ function Navbar() {
             <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
                 <ReactBootStrap.Nav className="mr-auto">
+                    {/* this is where I added the NavLink for router - may or may not work */}
                     <NavLink to="/"><ReactBootStrap.Nav.Link href="/">Home</ReactBootStrap.Nav.Link></NavLink>
                     <ReactBootStrap.Nav.Link href="aboutus">About Us</ReactBootStrap.Nav.Link>
                     <ReactBootStrap.NavDropdown title="Services" id="collasible-nav-dropdown">
