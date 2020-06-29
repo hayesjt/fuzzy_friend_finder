@@ -6,6 +6,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// import mongoose from "mongoose";
+// Not sure yet where to connect mongoose
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
