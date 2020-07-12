@@ -53,7 +53,13 @@ const petsSchema = new Schema({
     type: Date
   },
   notes: {
-    type: Date
+    type: String
+  },
+  attention: {
+    type: String
+  },
+  image: {
+    type: URL
   }
 });
 

@@ -3,11 +3,9 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
-// var db = require ("./models");
 const path = require('path')
-// Add apiRoute when created
-// const apiRoute = require("./controllers/chores_controller")
-var mongoose = require("mongoose");
+const apiRoute = require("./routes/api_routes")
+const mongoose = require("mongoose");
 
 require('dotenv').config();
 app.use(express.urlencoded({ extended: true }));
@@ -23,7 +21,7 @@ app.use((err, req, res, next) => {
     next();
 });
 
-// app.use(apiRoute)
+app.use(apiRoute)
 
 // KK: Wondering if we need to link public folder here? 
 
@@ -37,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
   }
 
   // Mongoose connection
-  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fuzzy_friend_finder", {
     useNewUrlParser: true
   });
   
