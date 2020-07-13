@@ -59,9 +59,15 @@ const petsSchema = new Schema({
     type: String
   },
   image: {
-    type: URL
+    type: String
+  }},  
+  {
+    toJSON: {
+      // include any virtual properties when data is requested
+      virtuals: true
+    }
   }
-});
+);
 
 const Pets = mongoose.model("Pets", petsSchema);
 
