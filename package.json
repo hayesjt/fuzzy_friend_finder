@@ -31,7 +31,9 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "concurrently": "^5.2.0",
     "heroku": "^7.42.4",
-    "heroku-cli": "^7.0.9"
+    "heroku-cli": "^7.0.9",
+    "if-env": "^1.0.4"
   }
 }
