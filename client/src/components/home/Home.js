@@ -1,10 +1,13 @@
 import React from 'react';
-import { Accordion, Card, Button} from 'react-bootstrap';
-import { Cat } from './imgs/cat_placeholder.png'
+import { Accordion, Card,  Image } from 'react-bootstrap';
+import { Cat } from './imgs/cat_placeholder.png';
 
 export const Home = () => (
 
 <Accordion defaultActiveKey="0">
+    
+<Image src={ Cat } fluid />
+
   <Card>
     <Accordion.Toggle as={Card.Header} eventKey="0">
       How many adoptions do we do a year?
