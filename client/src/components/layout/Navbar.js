@@ -10,7 +10,6 @@ export const Navigation = () => (
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="/aboutus">About Us</Nav.Link>
       <NavDropdown title="Services" id="basic-nav-dropdown">
         <NavDropdown.Item href="/veterinaryservices">Veterinary Services</NavDropdown.Item>
         <NavDropdown.Item href="/obediencetraining">Obedience Training</NavDropdown.Item>

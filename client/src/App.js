@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Navigation } from "./components/layout/Navbar";
 import { Layout } from "./components/layout/Layout";
 import { Home } from "./components/home/Home";
-import { About } from "./components/about_us/Aboutus";
 import { Veterinary } from './components/services/Veterinary';
 import { Obedience } from './components/services/Obedience';
 import { Grooming } from './components/services/Grooming';
@@ -56,7 +55,6 @@ class App extends Component {
           <Switch>
             {/* Routes to all pages*/}
             <Route exact path="/" component={Home} />
-            <Route path="/aboutus" component={About} />
             <Route path="/veterinaryservices" component={Veterinary} />
             <Route path="/obediencetraining" component={Obedience} />
             <Route path="/petgrooming" component={Grooming} />
