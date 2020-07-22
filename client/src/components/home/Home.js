@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, Card,  Image } from 'react-bootstrap';
-import { Cat } from './imgs/cat_placeholder.png';
+import Cat from './imgs/cat_placeholder.png';
 
 export const Home = () => (
 

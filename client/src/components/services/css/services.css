@@ -1,0 +1,28 @@
+.container {
+    padding-top: 15px;
+}
+.jumbotron {
+    width: 100%;
+}
+
+.dog {
+    width: 100%;
+}
+
+#end{
+    font-size: 100px;
+}
+
+#end-text{
+    font-size: 30px;
+}
+
+.card-deck {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#dog-img, #cat-img, #urn-img {
+    width: 100%;
+    height: 194px;
+}
