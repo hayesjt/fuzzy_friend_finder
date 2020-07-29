@@ -8,6 +8,8 @@ export const Home = () => (
     
 <Image src={ Cat } fluid />
 
+<p>HOME</p>
+
   <Card>
     <Accordion.Toggle as={Card.Header} eventKey="0">
       How many adoptions do we do a year?
