@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("process.env.MONGODB_URI || mongodb://user1:password1@ds119306.mlab.com:19306/heroku_wbxfv8bw", {
+mongoose.connect("process.env.MONGODB_URI || mongodb://localhost/fuzzy_friend_finder", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
