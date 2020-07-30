@@ -35,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
   }
 
   // Mongoose connection
-  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fuzzy_friend_finder", {
+  mongoose.connect(process.env.MONGODB_URI || "mongodb://user1:password1@ds119306.mlab.com:19306/heroku_wbxfv8bw", {
     useNewUrlParser: true
   });
   
