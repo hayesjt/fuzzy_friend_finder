@@ -21,7 +21,7 @@ export const Values = () => (
                         <Card.Text>
                             We strive to support both animals and owners through various services and intense application matching. We ensure each adoption is a perfect pair so each animal can have a forever home. 
     </Card.Text>
-                        <Button variant="primary">Support Services</Button>
+                        <Button variant="primary">Adoptable Animals</Button>
                     </Card.Body>
                 </Card>
             </Col>

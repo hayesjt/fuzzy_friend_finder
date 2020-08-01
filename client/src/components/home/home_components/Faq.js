@@ -3,6 +3,10 @@ import { Accordion, Card } from 'react-bootstrap';
 
 export const Faq = () => (
 
+  <React.Fragment>
+
+<h1 class="section_title">FAQ</h1>
+
 <Accordion defaultActiveKey="0">
   <Card>
     <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -45,4 +49,6 @@ export const Faq = () => (
     </Accordion.Collapse>
   </Card>
 </Accordion>
+
+</React.Fragment>
     )
