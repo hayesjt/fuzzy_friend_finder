@@ -19,7 +19,7 @@ export const Sponsors = () => (
                 <Card>
                     <Card.Img variant="top" src={Sponsor1} />
                     <Card.Body>
-                        <Card.Title>REI Coop</Card.Title>
+                        <Card.Title className ='text-center'>REI Coop</Card.Title>
                     </Card.Body>
                 </Card>
             </Col>
@@ -27,7 +27,7 @@ export const Sponsors = () => (
                 <Card>
                     <Card.Img variant="top" src={Sponsor2} />
                     <Card.Body>
-                        <Card.Title>The Power House</Card.Title>
+                        <Card.Title className ='text-center'>Power House</Card.Title>
                     </Card.Body>
                 </Card>
             </Col>
@@ -35,7 +35,7 @@ export const Sponsors = () => (
                 <Card>
                     <Card.Img variant="top" src={Sponsor3} />
                     <Card.Body>
-                        <Card.Title>Stella and Chewy</Card.Title>
+                        <Card.Title className ='text-center'>Stella and Chewy</Card.Title>
                     </Card.Body>
                 </Card>
             </Col>
@@ -43,7 +43,7 @@ export const Sponsors = () => (
                 <Card>
                     <Card.Img variant="top" src={Sponsor4} />
                     <Card.Body>
-                        <Card.Title>Bark Box</Card.Title>
+                        <Card.Title className ='text-center'>Bark Box</Card.Title>
                     </Card.Body>
                 </Card>
             </Col>
@@ -51,7 +51,7 @@ export const Sponsors = () => (
                 <Card>
                     <Card.Img variant="top" src={Sponsor5} />
                     <Card.Body>
-                        <Card.Title>Volkswagen</Card.Title>
+                        <Card.Title className ='text-center'>Volkswagen</Card.Title>
                     </Card.Body>
                 </Card>
             </Col>

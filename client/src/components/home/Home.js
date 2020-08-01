@@ -6,6 +6,7 @@ import { Service } from './home_components/Services';
 import { Faq } from './home_components/Faq';
 import { Team } from './home_components/Team';
 import { Sponsors } from './home_components/Sponsors';
+import { Contact } from './home_components/Contact';
 
 export const Home = () => (
 
@@ -32,6 +33,9 @@ export const Home = () => (
 
 {/* Sponsors */}
 <Sponsors></Sponsors>
+
+{/* Contact Info */}
+<Contact></Contact>
 
 </React.Fragment>
 
