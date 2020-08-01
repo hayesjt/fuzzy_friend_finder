@@ -4,7 +4,6 @@ import { PicSlides } from './home_components/Carousel';
 
 export const Home = () => (
 
-
 // Container for Home components coming in
 <React.Fragment>
 
@@ -15,6 +14,5 @@ export const Home = () => (
 <Faq></Faq>
 
 </React.Fragment>
-
 
     )
