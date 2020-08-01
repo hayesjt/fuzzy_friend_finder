@@ -27,7 +27,7 @@ export const PicSlides = () => (
             <Image src={Slide3} fluid />
             <Carousel.Caption>
                 <h3 class = 'carousel_label'>COMMUNITY.</h3>
-                <p class = 'carousel_label'>We offer a vareity of events to help and connect animals with volunteers!</p>
+                <p class = 'carousel_label'>We offer a vareity of events to help connect animals with volunteers and owners.</p>
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>

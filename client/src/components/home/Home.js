@@ -1,6 +1,8 @@
 import React from 'react';
-import { Faq } from './home_components/Faq';
 import { PicSlides } from './home_components/Carousel';
+import { Values } from './home_components/Values';
+import { Events } from './home_components/Events';
+import { Faq } from './home_components/Faq';
 
 export const Home = () => (
 
@@ -9,6 +11,12 @@ export const Home = () => (
 
 {/* Carousel of images */}
 <PicSlides></PicSlides>
+
+{/* Values of the Rescue */}
+<Values></Values>
+
+{/* Upcoming events */}
+<Events></Events>
 
 {/* Drop down quick facts */}
 <Faq></Faq>
