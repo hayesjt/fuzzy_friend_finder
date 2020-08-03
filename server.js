@@ -4,8 +4,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const path = require('path');
-const apiRoute = require("./routes/api_routes");
 const mongoose = require("mongoose");
+
 
 require('dotenv').config();
 app.use(express.urlencoded({ extended: true }));
@@ -21,9 +21,7 @@ app.use((err, req, res, next) => {
     next();
 });
 
-require("./routes/api_routes")(app);
-
-// KK: Wondering if we need to link public folder here? 
+require("./routes/api_routes")(app); 
 
 if (process.env.NODE_ENV === 'production') {
     // Serve any static files

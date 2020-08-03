@@ -75,7 +75,7 @@ let petSeed = [
 db.Pets.deleteMany({})
   .then(() => db.Pets.collection.insertMany(petSeed))
   .then(data => {
-    console.log("Pet records inserted!");
+    console.log(data.result.n + " records inserted!");
     process.exit(0);
   })
   .catch(err => {

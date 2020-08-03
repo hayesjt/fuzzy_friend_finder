@@ -1,0 +1,13 @@
+{
+    "development": {
+        "database": "fuzzy-friend-finder",
+        "host": "localhost"
+    },
+    "test": {
+        "database": "fuzzy-friend-finder",
+        "host": "localhost"
+    },
+    "production": {
+        "use_env_variable": "MONGODB_URI"
+    }
+}
