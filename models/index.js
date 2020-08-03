@@ -1,4 +1,4 @@
   
 module.exports = {
-    Pets: require('./pets')
+    Pet: require('./Pet')
   };

@@ -1,13 +1,20 @@
 {
     "development": {
-        "database": "fuzzy-friend-finder",
-        "host": "localhost"
+        "username": "root",
+        "password": null,
+        "database": "fuzzy_friend_finder",
+        "host": "localhost",
+        "dialect": "mongoose"
     },
     "test": {
-        "database": "fuzzy-friend-finder",
-        "host": "localhost"
+        "username": "root",
+        "password": null,
+        "database": "fuzzy_friend_finder",
+        "host": "localhost", 
+        "dialect": "mongoose"
     },
     "production": {
-        "use_env_variable": "MONGODB_URI"
+        "use_env_variable": "MONGODB_URI",
+        "dialect": "mongoose"
     }
 }
