@@ -1,9 +1,14 @@
-var db = require("../models");
+var Pets = require("../models/pets.js");
+var express = require("express")
+var router = express.Router()
 
-module.exports = function(app) {
-  app.get("/api/pets", function(req, res) {
-    db.Pet.find({}).then(function(result) {
-      res.json(result);
+///////////////////////////////////////////GET ROUTES////////////////////////////////////////////////
+    // GET (show all transactions)
+    router.route("/api/pets/").get( function (req, res) {
+        Pets.findAll({})
+            .then(function (dbPets) {
+                res.json(dbPets);
+            })
     });
-  });
-};
+
+module.exports = router;

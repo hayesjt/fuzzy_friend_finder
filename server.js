@@ -3,9 +3,8 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3001;
-const path = require('path');
-const mongoose = require("mongoose");
-
+const path = require('path')
+const apiRoute = require("./routes/api_routes")
 
 require('dotenv').config();
 app.use(express.urlencoded({ extended: true }));
@@ -21,7 +20,7 @@ app.use((err, req, res, next) => {
     next();
 });
 
-require("./routes/api_routes")(app); 
+app.use(apiRoute)
 
 if (process.env.NODE_ENV === 'production') {
     // Serve any static files
@@ -31,13 +30,6 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
     });
   }
-
-  // Mongoose connection
-  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fuzzy_friend_finder", {
-    useNewUrlParser: true
-  });
-  
-  
-  app.listen(PORT, function() {
-    console.log(`Now listening on port: ${PORT}`);
-  });
+    app.listen(PORT, function () {
+        console.log("App listening on PORT " + PORT);
+});
