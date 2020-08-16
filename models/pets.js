@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 var sequelize = require("../config/connection");
 
-var Pets = sequelize.define("Pets", {
+var Pets = sequelize.define("pets", {
     pets_id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -13,6 +13,7 @@ var Pets = sequelize.define("Pets", {
     status: Sequelize.STRING,
     age: Sequelize.STRING,
     size: Sequelize.STRING,
+    sex: Sequelize.STRING,
     good_with_dogs: Sequelize.BOOLEAN,
     good_with_cats: Sequelize.BOOLEAN,
     good_with_kids: Sequelize.BOOLEAN,
