@@ -1,22 +1,28 @@
 import React from 'react';
-import { CardDeck, Card } from 'react-bootstrap';
-import './css/services.css'
+import { CardDeck, Card, Badge } from 'react-bootstrap';
+import './css/services.css';
+import Paws from './imgs/paws.jpeg';
+import Bunny from './imgs/bunny.jpeg';
+import Urn from './imgs/urn.jpeg';
+import Hospital from './imgs/hospital.jpeg';
+import Snuggle from './imgs/snuggle.jpeg';
+import { Contact } from '../home/home_components/Contact';
 
 export const EndOfLife = () => (
     <div>
         <Card className="bg-dark text-white">
-  <Card.Img src="https://s3.amazonaws.com/petcentral.com/wp-content/uploads/2015/05/08165949/old-dog-pain-relief.jpg" alt="Card image" />
+  <Card.Img src={ Paws } alt="Card image" />
   <Card.ImgOverlay>
     <Card.Title id="end">End of Life Services</Card.Title>
     <Card.Text id="end-text">
       What to do when your pet passes away
     </Card.Text>
-    <Card.Text>Resources for every pet owner</Card.Text>
+    <Card.Text id="resources-text">Resources for every pet owner</Card.Text>
   </Card.ImgOverlay>
 </Card>
 <CardDeck>
   <Card>
-    <Card.Img id="dog-img" variant="top" src="https://media1.s-nbcnews.com/i/newscms/2019_26/1452846/old-dog-today-main-190625_f5d00385fdc328d1ac98ac057e00b1fe.jpg" fluid/>
+    <Card.Img variant="top" src={ Bunny } fluid/>
     <Card.Body>
       <Card.Title>Is Your Pet In Pain?</Card.Title>
       <Card.Text>
@@ -25,7 +31,7 @@ export const EndOfLife = () => (
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img id="cat-img" variant="top" src="https://www.companioncare.co.uk/globalassets/close-up-of-cat-looking-up.jpg?w=585&scale=down"/>
+    <Card.Img variant="top" src= { Hospital }/>
     <Card.Body>
       <Card.Title>Pet Hospice Care</Card.Title>
       <Card.Text>
@@ -34,7 +40,7 @@ export const EndOfLife = () => (
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img id="urn-img" variant="top" src="https://cdn.shopify.com/s/files/1/0039/0781/3465/files/SkyUrns-08821-test_4e7986b1-561c-47f5-b3b6-4eee4681c704_300x.jpg?v=1549731156"/>
+    <Card.Img variant="top" src={ Urn }/>
     <Card.Body>
       <Card.Title>Pet Cremation and Burial</Card.Title>
       <Card.Text>
@@ -44,10 +50,21 @@ export const EndOfLife = () => (
   </Card>
 </CardDeck>
 <Card>
-    <Card.Img variant="top" src="https://agapepetservices.com/wp-content/uploads/2015/12/2_symptom-grief.jpg" />
+    <Card.Img variant="top" src={ Snuggle } />
     <Card.Body>
       <Card.Text>
-        <h3>Dealing with Pet Loss</h3>
+        <h1>Dealing with Pet Loss</h1>
+        <div>
+  <h2>
+  <Badge variant="secondary">87%</Badge> of pet owners experience at least one symptom of grief
+  </h2>
+  <h3>
+  <Badge variant="secondary">35%</Badge> still experience grief after 6 months
+  </h3>
+  <h4>
+  <Badge variant="secondary">22%</Badge> still experience grief after 1 year
+  </h4>
+</div>
       There are many forms of grief that are completely normal in the wake of the loss of a beloved pet. It can help to memorialize your pet in a way that includes others who cared about him or her. Friends and family can help form a support network. If severe symptoms of grief persist, it is best to consult with your doctor about your feelings and ways to cope with this loss.
       </Card.Text>
     </Card.Body>
@@ -56,5 +73,9 @@ export const EndOfLife = () => (
   <br></br>
   <br></br>
   <br></br>
+
+  {/* Contact Info */}
+<Contact></Contact>
+
     </div>
     )
