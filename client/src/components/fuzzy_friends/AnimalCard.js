@@ -1,25 +1,19 @@
   
 import React from "react";
-
 export const AnimalCard = (props) => {
 
   return (
-    <div className="card">
+    <div className="card animal-card">
       <div className="card-body">
-    <img src={props.image} style={{width: 200 + "px"}} className="card-img-top" alt="animal picture"></img>
+    <img src={props.image} style={{width: 100 + "%"}} className="card-img-top" alt="animal picture"></img>
       <h2 className="card-title">{props.name}</h2>
-      <ul>
-          <li>Attention: {props.attention}</li>
-          <li>Type / Breed: {props.pet_type} / {props.breed}</li>
-          <li>Age: {props.age}</li>
-          <li>Sex: {props.sex}</li>
-          <li>Size: {props.size}</li>
-          <li>Good With Dogs? {props.good_with_dogs}</li>
-          <li>Good With Kids? {props.good_with_kids}</li>
-          <li>Indoor or Outdoor? {props.indoor_or_outdoor}</li>
-          <li>Housetrained? {props.housetrained}</li>
-          <li>Date Surrendered: {props.date_surrendered}</li>
-          <li>Notes: {props.notes}</li>
+      <ul className='animalFactsList'>
+          {/* <li>Attention: {props.attention}</li> */}
+          <li><b>Type / Breed:</b> {props.pet_type} / {props.breed}</li>
+          <li><b>Age:</b> {props.age}</li>
+          <li><b>Sex:</b> {props.sex}</li>
+          <li><b>Size:</b> {props.size}</li>
+          <li><b>Status:</b> {props.status}</li>        
       </ul>
       </div>
       </div>

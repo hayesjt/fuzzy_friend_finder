@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 8px 0;
+  }
+
+  .animals-in-need-title {
+      color: black;
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .animals-in-need-card {
+    border: none !important
+  }
+
+  .animal-card {
+    margin-bottom: 25px
+  }
