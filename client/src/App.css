@@ -1,3 +1,7 @@
+.react_container{
+  background-image: url('./images/background-pattern.png')
+}
+
 .App {
   text-align: center;
 }

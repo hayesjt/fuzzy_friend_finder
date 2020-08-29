@@ -10,7 +10,6 @@ import { Grooming } from './components/services/Grooming';
 import { Support } from './components/services/Support';
 import { Surrender } from './components/services/Surrender';
 import { EndOfLife } from './components/services/EndOfLife';
-import { Foster } from './components/fuzzy_friends/Foster';
 import { AdoptableAnimals } from './components/fuzzy_friends/AdoptableAnimals';
 import { SuccessfulAdoptions } from './components/fuzzy_friends/SuccessfulAdoptions';
 import { RainbowBridge } from './components/fuzzy_friends/RainbowBridge';
@@ -43,7 +42,7 @@ class App extends Component {
   render() {
   return (
     // React Container: used instead of a </div> tag
-    <React.Fragment>
+    <React.Fragment ClassName='react_container'>
 
       {/* Nav Bar Component */}
       <Navigation />
@@ -61,7 +60,6 @@ class App extends Component {
             <Route path="/supportservices" component={Support} />
             <Route path="/surrenderservices" component={Surrender} />
             <Route path="/endoflifeservices" component={EndOfLife} />
-            <Route path="/fosterneeds" component={Foster} />
             <Route path="/adoptableanimals" component={AdoptableAnimals} />
             <Route path="/successfuladoptions" component={SuccessfulAdoptions} />
             <Route path="/rainbowbridge" component={RainbowBridge} />

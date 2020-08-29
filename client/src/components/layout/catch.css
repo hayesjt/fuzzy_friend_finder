@@ -1,0 +1,12 @@
+/* Nothing in this file working yet - need to come back before full production */
+
+.opps_card {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.opps_text {
+    text-align: center;
+}
