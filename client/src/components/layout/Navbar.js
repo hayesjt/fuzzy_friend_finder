@@ -20,7 +20,6 @@ export const Navigation = () => (
         <NavDropdown.Item href="/endoflifeservices">End of Life Services</NavDropdown.Item>
       </NavDropdown>
       <NavDropdown title="Fuzzy Friends" id="basic-nav-dropdown">
-        <NavDropdown.Item href="/fosterneeds">Foster Needs</NavDropdown.Item>
         <NavDropdown.Item href="/adoptableanimals">Adoptable Animals</NavDropdown.Item>
         <NavDropdown.Item href="/successfuladoptions">Successful Adoptions</NavDropdown.Item>
         <NavDropdown.Item href="/rainbowbridge">Rainbow Bridge</NavDropdown.Item>
