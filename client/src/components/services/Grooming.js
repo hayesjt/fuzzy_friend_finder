@@ -85,8 +85,6 @@ export const Grooming = () => (
 </Card>
   <br></br>
   <br></br>
-  <br></br>
-  <br></br>
 
   {/* Contact Info */}
 <Contact></Contact>

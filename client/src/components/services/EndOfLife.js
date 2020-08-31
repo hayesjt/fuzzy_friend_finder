@@ -71,8 +71,7 @@ export const EndOfLife = () => (
   </Card>
   <br></br>
   <br></br>
-  <br></br>
-  <br></br>
+
 
   {/* Contact Info */}
 <Contact></Contact>
