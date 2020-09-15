@@ -16,6 +16,7 @@ import { RainbowBridge } from './components/fuzzy_friends/RainbowBridge';
 import { Donate } from "./components/donate/Donate";
 import { Catch } from "./components/layout/Catch";
 import { Footer } from "./components/layout/Footer";
+import { AnimalPage }from "./components/fuzzy_friends/AnimalPage";
 
 
 class App extends Component {
@@ -64,6 +65,7 @@ class App extends Component {
             <Route path="/successfuladoptions" component={SuccessfulAdoptions} />
             <Route path="/rainbowbridge" component={RainbowBridge} />
             <Route path="/donate" component={Donate} />
+            <Route exact path="/adoptableanimals/:id" component={AnimalPage} />
             <Route component={Catch} />
 
           </Switch>
