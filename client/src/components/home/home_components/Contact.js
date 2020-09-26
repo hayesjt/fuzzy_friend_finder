@@ -13,8 +13,8 @@ export const Contact = () => (
 
 {/* Address */}
             <Col>
-                <Card className = 'border-0'>
-                <Card.Title>Address</Card.Title>
+                <Card style= {{backgroundColor: "transparent"}} className = 'border-0' >
+                <Card.Title >Address</Card.Title>
                     <Card.Text>
                             7186 Oriel Street N
                     </Card.Text>
@@ -26,7 +26,7 @@ export const Contact = () => (
 
 {/* Phone Numbers */}
             <Col>
-                <Card className = 'border-0'>
+                <Card style= {{backgroundColor: "transparent"}} className = 'border-0'>
                 <Card.Title>Phone</Card.Title>
                     <Card.Text>
                             Adoption Center:763-648-5359
@@ -42,7 +42,7 @@ export const Contact = () => (
 
 {/* Hours */}
             <Col>
-                <Card className = 'border-0'>
+                <Card style= {{backgroundColor: "transparent"}} className = 'border-0'>
                 <Card.Title>Hours</Card.Title>
                     <Card.Text>
                             Rescue Center (M-Sat) 8AM - 8PM
@@ -55,7 +55,7 @@ export const Contact = () => (
 
 {/* Social Media */}
             <Col>
-                <Card className = 'border-0'>
+                <Card style= {{backgroundColor: "transparent"}} className = 'border-0'>
                 <Card.Title>Social Media</Card.Title>
                     <Card.Text>
                             Facebook
