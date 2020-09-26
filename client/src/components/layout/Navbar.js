@@ -4,7 +4,7 @@ import { Nav, Navbar, NavDropdown} from 'react-bootstrap';
 export const Navigation = () => (
     <>
 
-  <Navbar bg="dark" variant="dark" expand="lg">
+  <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
   <Navbar.Brand style={{color: "rgb(255,144,0)"}} href="/">Fuzzy Friend Finder</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
