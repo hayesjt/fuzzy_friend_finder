@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { Card, Row, Col } from 'react-bootstrap';
+import { CardDeck, Card, Row, Col } from 'react-bootstrap';
 
 
 export const Contact = () => (
@@ -9,10 +9,9 @@ export const Contact = () => (
 
         <h1 class="section_title">CONTACT US</h1>
 
-        <Row className ='text-center'>
+        <CardDeck className ='text-center'>
 
 {/* Address */}
-            <Col>
                 <Card style= {{backgroundColor: "transparent"}} className = 'border-0' >
                 <Card.Title >Address</Card.Title>
                     <Card.Text>
@@ -22,10 +21,9 @@ export const Contact = () => (
                             St. Louis Park, MN, 55416
                     </Card.Text>
                 </Card>
-            </Col>
+            
 
 {/* Phone Numbers */}
-            <Col>
                 <Card style= {{backgroundColor: "transparent"}} className = 'border-0'>
                 <Card.Title>Phone</Card.Title>
                     <Card.Text>
@@ -38,10 +36,9 @@ export const Contact = () => (
                             Support Services: 763-489-1678
                     </Card.Text>
                 </Card>
-            </Col>
+            
 
 {/* Hours */}
-            <Col>
                 <Card style= {{backgroundColor: "transparent"}} className = 'border-0'>
                 <Card.Title>Hours</Card.Title>
                     <Card.Text>
@@ -51,10 +48,9 @@ export const Contact = () => (
                             Vet Clinic (M-Sun) 7AM - 8PM
                     </Card.Text>
                 </Card>
-            </Col>
+            
 
 {/* Social Media */}
-            <Col>
                 <Card style= {{backgroundColor: "transparent"}} className = 'border-0'>
                 <Card.Title>Social Media</Card.Title>
                     <Card.Text>
@@ -67,14 +63,14 @@ export const Contact = () => (
                             YouTube
                     </Card.Text>
                 </Card>
-            </Col>
+           
 
-        </Row>
+        </CardDeck>
 
         <br></br>
         <br></br>
         <br></br>
-
+        
     </React.Fragment>
 
 )
