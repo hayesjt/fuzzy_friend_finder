@@ -5,7 +5,7 @@ export const Navigation = () => (
     <>
 
   <Navbar bg="dark" variant="dark" expand="lg">
-  <Navbar.Brand href="/">Fuzzy Friend Finder</Navbar.Brand>
+  <Navbar.Brand style={{color: "rgb(255,144,0)"}} href="/">Fuzzy Friend Finder</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
