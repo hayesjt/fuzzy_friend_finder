@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { Card, Button, Row, Col } from 'react-bootstrap';
+import { CardDeck, Card, Button } from 'react-bootstrap';
 import Values1 from './imgs/pic_values1.jpeg';
 import Values2 from './imgs/pic_values2.jpeg';
 import Values3 from './imgs/pic_values3.jpeg';
@@ -12,8 +12,7 @@ export const Values = () => (
 
         <h1 class="section_title">OUR MISSION</h1>
 
-        <Row>
-            <Col>
+<CardDeck>
                 <Card>
                     <Card.Img variant="top" src={Values1} />
                     <Card.Body>
@@ -24,8 +23,7 @@ export const Values = () => (
                         <Button variant="primary">Adoptable Animals</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-            <Col>
+   
                 <Card>
                     <Card.Img variant="top" src={Values2} />
                     <Card.Body>
@@ -36,8 +34,7 @@ export const Values = () => (
                         <Button variant="primary">Veterinary Services</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-            <Col>
+          
                 <Card>
                     <Card.Img variant="top" src={Values3} />
                     <Card.Body>
@@ -48,9 +45,8 @@ export const Values = () => (
                         <Button variant="primary">Upcoming Events</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-        </Row>
-
+                </CardDeck>
+    
     </React.Fragment>
 
 )
