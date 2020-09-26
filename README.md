@@ -1,25 +1,17 @@
-# Fuzzy Friend Finder - Rescue and Adoption 
-###### Collaborators: Ashley Wegwerth, Haylee Thomas-Kuhlmann, Kayla Kuhlman
+# **Fuzzy Friend Finder - Rescue and Adoption**
+##### Collaborators: Ashley Wegwerth, Haylee Thomas-Kuhlmann, Kayla Kuhlman
 
 ---
 
-##### Project Objective:
+##### **Project Objective:**
 
-    The purpose of Fuzzy Friend Finder is to eventually pitch a newly designed website to a local shelter in hopes of becoming a
+    The purpose of Fuzzy Friend Finder is to eventually pitch a newly designed website to a local shelter in hopes of becoming a volunteer software engineer team and helping them update their website, applicartions, and operations. Many animal shelters have websites that are outdated, not fully functioning, and they cannot afford to have a third party company continuoysly update their databases, information, and style. A well working and updated website is an essential tool in getting these homeless animals adopted and to their forever loving homes, we just want to take part in the process! 
 
-    volunteer software engineer team and helping them update their website, applications, and operations. Many shelters have 
-
-    websites that are outdated, not fully functional, and cannot afford to have a company to continuously update their database, 
-
-    information, and style. A well working and undated website is an essential tool in getting these homeless animals adopted and to
-     
-    their forever loving home, we just want to be a part in that!
-
-##### Live Application: [Fuzzy Friend Finder](https://fuzzyfriendfinder.herokuapp.com/)
+##### **Live Application:** [Fuzzy Friend Finder](https://fuzzyfriendfinder.herokuapp.com/)
 
 ---
     
-##### Tools Used:
+##### **Tools Used:**
 
 | Back End      | Front End     |Other          |
 | ------------- |:-------------:|:-------------:|
@@ -29,7 +21,7 @@
 |               | CSS           |               |
 |               | Javascript    |               |
 
-##### Other Tools & Information:
+##### **Other Tools & Information:**
 
 | Color         | RGB           |
 | ------------- |:-------------:|
