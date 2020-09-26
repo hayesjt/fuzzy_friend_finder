@@ -8,7 +8,7 @@ import { CardDeck, Card, Button } from 'react-bootstrap';
 import { Contact } from '../home/home_components/Contact';
 
 export const Grooming = () => (
-    <div>
+    <div style ={{marginTop: "70px"}}>
         <Card className="bg-dark text-white">
   <Card.Img src={ Bowtie } alt="Card image" />
   <Card.ImgOverlay>

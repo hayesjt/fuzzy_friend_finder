@@ -8,7 +8,7 @@ import { Contact } from '../home/home_components/Contact';
 
 
 export const Obedience = () => (
-    <div>
+    <div style ={{marginTop: "70px"}}>
         <Card className="bg-dark text-white">
   <Card.Img src= { Sit } alt="Card image" />
   <Card.ImgOverlay>

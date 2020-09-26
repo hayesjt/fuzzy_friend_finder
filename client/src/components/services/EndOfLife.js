@@ -9,7 +9,7 @@ import Snuggle from './imgs/snuggle.jpeg';
 import { Contact } from '../home/home_components/Contact';
 
 export const EndOfLife = () => (
-    <div>
+    <div style ={{marginTop: "70px"}}>
         <Card className="bg-dark text-white">
   <Card.Img src={ Paws } alt="Card image" />
   <Card.ImgOverlay>
