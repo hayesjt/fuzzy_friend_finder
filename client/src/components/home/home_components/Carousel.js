@@ -7,7 +7,7 @@ import './home.css';
 
 export const PicSlides = () => (
 
-    <Carousel>
+    <Carousel style = {{marginTop: "70px"}}>
         <Carousel.Item>
             <Image src={Slide1} fluid />
             <Carousel.Caption>
