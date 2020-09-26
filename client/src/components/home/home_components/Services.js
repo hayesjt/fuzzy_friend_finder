@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { Card, Button, Row, Col } from 'react-bootstrap';
+import { CardDeck, Card, Button } from 'react-bootstrap';
 import Service1 from './imgs/pic_service1.jpeg';
 import Service2 from './imgs/pic_service2.jpeg';
 import Service3 from './imgs/pic_service3.jpeg';
@@ -15,8 +15,7 @@ export const Service = () => (
 
         <h1 class="section_title">SERVICES</h1>
 
-        <Row>
-            <Col>
+        <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={Service1} />
                     <Card.Body>
@@ -27,8 +26,6 @@ export const Service = () => (
                         <Button variant="primary">Schedule Appointment</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-            <Col>
                 <Card>
                     <Card.Img variant="top" src={Service2} />
                     <Card.Body>
@@ -39,8 +36,6 @@ export const Service = () => (
                         <Button variant="primary">Schedule Appointment</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-            <Col>
                 <Card>
                     <Card.Img variant="top" src={Service3} />
                     <Card.Body>
@@ -52,15 +47,14 @@ export const Service = () => (
                         <Button variant="primary">Schedule Appointment</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-        </Row>
+                </CardDeck>
+
 
 <br></br>
 
         {/* SECOND ROW */}
 
-        <Row>
-            <Col>
+       <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={Support1} />
                     <Card.Body>
@@ -70,8 +64,7 @@ export const Service = () => (
                         <Button variant="primary">Support Services</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-            <Col>
+         
                 <Card>
                     <Card.Img variant="top" src={Support2} />
                     <Card.Body>
@@ -83,8 +76,7 @@ export const Service = () => (
                         <Button variant="primary">Surrender Services</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-            <Col>
+           
                 <Card>
                     <Card.Img variant="top" src={Support3} />
                     <Card.Body>
@@ -94,8 +86,7 @@ export const Service = () => (
                         <Button variant="primary">End of Life Services</Button>
                     </Card.Body>
                 </Card>
-            </Col>
-        </Row>
+                </CardDeck>
 
     </React.Fragment>
 
