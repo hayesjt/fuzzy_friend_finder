@@ -13,7 +13,7 @@ export const Obedience = () => (
   <Card.Img src= { Sit } alt="Card image" />
   <Card.ImgOverlay>
     <Card.Title id="end">Obedience Training</Card.Title>
-    <Card.Text id="end-text">
+    <Card.Text id="obedience-text">
       Help your pet learn new skills
     </Card.Text>
     <Card.Text id="resources-text"></Card.Text>
@@ -63,9 +63,9 @@ export const Obedience = () => (
 <Card className="text-center">
   <Card.Header></Card.Header>
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
+    <Card.Title>Training and Obedience</Card.Title>
     <Card.Text>
-    Go ahead and schedule a session with our professional training staff
+    Schedule a session with our professional training staff
     <Card.Img variant="top" src=''/>
     </Card.Text>
     <Button variant="primary">Make an Appointment</Button>

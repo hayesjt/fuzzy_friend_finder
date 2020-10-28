@@ -17,7 +17,7 @@ export const EndOfLife = () => (
     <Card.Text id="end-text">
       What to do when your pet passes away
     </Card.Text>
-    <Card.Text id="resources-text">Resources for every pet owner</Card.Text>
+    <Card.Text id="resources-text"></Card.Text>
   </Card.ImgOverlay>
 </Card>
 <CardDeck>

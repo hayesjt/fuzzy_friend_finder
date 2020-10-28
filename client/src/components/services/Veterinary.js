@@ -8,12 +8,12 @@ import { Contact } from '../home/home_components/Contact';
 
 
 export const Veterinary = () => (
-    <div>
+  <div style ={{marginTop: "70px"}}>
         <Card className="bg-dark text-white">
   <Card.Img src= { Gloves } alt="Card image" />
   <Card.ImgOverlay>
     <Card.Title id="end">Veterinary Services</Card.Title>
-    <Card.Text id="end-text">
+    <Card.Text id="vet-text">
       Keeping your pet healthy is our priority
     </Card.Text>
     <Card.Text id="resources-text"></Card.Text>
@@ -55,9 +55,9 @@ export const Veterinary = () => (
 <Card className="text-center">
   <Card.Header></Card.Header>
   <Card.Body>
-    <Card.Title>Lorem Ipsum</Card.Title>
+    <Card.Title>Veterinary Appointments</Card.Title>
     <Card.Text>
-    Go ahead and schedule a session with our professional training staff
+    Make an appointment with one of our amazing veterinarians
     <Card.Img variant="top" src=''/>
     </Card.Text>
     <Button variant="primary">Make an Appointment</Button>

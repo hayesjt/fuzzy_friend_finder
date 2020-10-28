@@ -1,7 +1,74 @@
 import React from 'react';
+import Floofer from './imgs/floofer.jpeg';
+import Shaggy from './imgs/shaggy.jpeg';
+import Love from './imgs/love-bird.jpeg';
+import Belly from './imgs/belly.jpeg';
+import { CardDeck, Card, Button } from 'react-bootstrap';
+import { Contact } from '../home/home_components/Contact';
+
 
 export const Support = () => (
-        <div>
-            <p>SUPPORT PAGE</p>
-        </div>
+    <div style ={{marginTop: "70px"}}>
+        <Card className="bg-dark text-white">
+  <Card.Img src= { Floofer } alt="Card image" />
+  <Card.ImgOverlay>
+    <Card.Title id="end">Support Services</Card.Title>
+    <Card.Text id="support-text">
+    We are here for you and your pet
+    </Card.Text>
+    <Card.Text id="resources-text"></Card.Text>
+  </Card.ImgOverlay>
+</Card>
+<CardDeck>
+  <Card>
+    <Card.Img variant="top" src={ Belly } fluid/>
+    <Card.Body>
+      <Card.Title>Lorem Ipsum</Card.Title>
+      <Card.Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      <br></br>
+     
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src={ Love }/>
+    <Card.Body>
+      <Card.Title>Lorem Ipsum</Card.Title>
+      <Card.Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      <br></br>
+ 
+      </Card.Text>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src={ Shaggy }/>
+    <Card.Body>
+      <Card.Title>Lorem Ipsum</Card.Title>
+      <Card.Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+</CardDeck>
+<Card className="text-center">
+  <Card.Header></Card.Header>
+  <Card.Body>
+    <Card.Title>Short-term and Long-term Support</Card.Title>
+    <Card.Text>
+    Schedule a pet drop off time with our staff
+    <Card.Img variant="top" src=''/>
+    </Card.Text>
+    <Button variant="primary">Make an Appointment</Button>
+  </Card.Body>
+  <Card.Footer className="text-muted"></Card.Footer>
+</Card>
+  <br></br>
+  <br></br>
+
+  {/* Contact Info */}
+<Contact></Contact>
+
+    </div>
     )

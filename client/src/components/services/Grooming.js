@@ -13,10 +13,10 @@ export const Grooming = () => (
   <Card.Img src={ Bowtie } alt="Card image" />
   <Card.ImgOverlay>
     <Card.Title id="end">Grooming Services</Card.Title>
-    <Card.Text id="end-text">
+    <Card.Text id="grooming-text">
       Essential care for a healthy life
     </Card.Text>
-    <Card.Text id="resources-text">Keep your pet squeaky clean</Card.Text>
+    <Card.Text id="resources-text"></Card.Text>
   </Card.ImgOverlay>
 </Card>
 <CardDeck>
@@ -74,10 +74,9 @@ export const Grooming = () => (
 <Card className="text-center">
   <Card.Header></Card.Header>
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
+    <Card.Title>Grooming and Bathing</Card.Title>
     <Card.Text>
-    Go ahead and schedule a service and let our professional staff do the dirty work
-    <Card.Img variant="top" src={ Banner }/>
+    Schedule a service and let our professional staff do the dirty work
     </Card.Text>
     <Button variant="primary">Make an Appointment</Button>
   </Card.Body>
