@@ -10,4 +10,20 @@ var router = express.Router()
             })
     });
 
+    router.route("/api/:pets_id").get( function (req, res) {
+        Pets.findAll({where: {pets_id: req.params.pets_id}}).then(function (dbPets) {
+            res.json(dbPets);
+        })
+    });
+
 module.exports = router;
+
+// app.get("/api/progresses/:id", function (req, res) {
+//     db.Progress.findAll({
+//       where: {
+//         userId: req.params.id
+//       }
+//     }).then(function (result) {
+//       res.json(result);
+//     });
+//   });

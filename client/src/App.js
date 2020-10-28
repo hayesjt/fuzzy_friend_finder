@@ -43,7 +43,7 @@ class App extends Component {
   render() {
   return (
     // React Container: used instead of a </div> tag
-    <React.Fragment ClassName='react_container'>
+    <React.Fragment>
 
       {/* Nav Bar Component */}
       <Navigation />
@@ -61,11 +61,11 @@ class App extends Component {
             <Route path="/supportservices" component={Support} />
             <Route path="/surrenderservices" component={Surrender} />
             <Route path="/endoflifeservices" component={EndOfLife} />
-            <Route path="/adoptableanimals" component={AdoptableAnimals} />
+            <Route exact path="/adoptableanimals" component={AdoptableAnimals} />
             <Route path="/successfuladoptions" component={SuccessfulAdoptions} />
             <Route path="/rainbowbridge" component={RainbowBridge} />
             <Route path="/donate" component={Donate} />
-            <Route exact path="/adoptableanimals/:id" component={AnimalPage} />
+            <Route exact path="/animalinfo/:pets_id" component={AnimalPage} />
             <Route component={Catch} />
 
           </Switch>
