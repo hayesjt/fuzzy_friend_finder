@@ -20,3 +20,16 @@ li {
   .animal-card {
     margin-bottom: 25px
   }
+
+  .animal-info-page {
+    float: left;
+    padding-right: 3em;
+  }
+
+  .animalInfoText {
+    padding-left: 2em;
+  }
+
+  .attention {
+    color: red;
+  }

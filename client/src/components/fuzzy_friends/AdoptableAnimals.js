@@ -4,6 +4,7 @@ import axios from 'axios';
 import { AnimalCard } from "../fuzzy_friends/AnimalCard";
 import Adoption from './imgs/animals-in-need.jpeg';
 import './css/style.css';
+import { Contact } from '../home/home_components/Contact';
 
 export const AdoptableAnimals = () => {
 
@@ -32,7 +33,7 @@ export const AdoptableAnimals = () => {
 
 
     return (
-        <div>
+        <div style ={{marginTop: "70px"}}>
             <Card className="animals-in-need-card">
                 <h1 className="animals-in-need-title">Animals in Need</h1>
                 <Card.Img src={Adoption} alt="Card image" />
@@ -99,12 +100,19 @@ export const AdoptableAnimals = () => {
                             sex={pets.sex}
                             status={pets.status}
                             size={pets.size}
+                            id={pets.pets_id}
                         />
                         </div>
                     )
                 })}
 </Row>
             <br /> <br />
+            <br></br>
+  <br></br>
+
+  {/* Contact Info */}
+<Contact></Contact>
+
         </div>
     )
 }
