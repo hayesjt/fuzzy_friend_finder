@@ -1,0 +1,67 @@
+.container {
+    padding-top: 15px;
+}
+.jumbotron {
+    width: 100%;
+}
+
+.dog {
+    width: 100%;
+}
+
+#end {
+    font-size: 100px;
+    color: black;
+}
+
+#end-text {
+    font-size: 40px;
+    color: #DA9C37;
+    font-weight: bold;
+}
+
+#support-text {
+    font-size: 40px;
+    color: #C70039;
+    font-weight: bold;
+}
+
+#vet-text {
+    font-size: 40px;
+    color: #224968;
+    font-weight: bold;
+}
+
+#obedience-text {
+    font-size: 40px;
+    color: #FF5733;
+    font-weight: bold;
+}
+
+#grooming-text {
+    font-size: 40px;
+    color: #DAF7A6;
+    font-weight: bold;
+}
+
+#surrender-text {
+    font-size: 40px;
+    color: #581845;
+    font-weight: bold;
+}
+
+#resources-text {
+    font-size: 30px;
+    color: black;
+}
+
+.card-deck {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* .card-img {
+    filter:brightness(1.2);
+} */
+
+
