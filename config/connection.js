@@ -10,7 +10,7 @@ if(process.env.JAWSDB_URL) {
   var sequelize = new Sequelize(process.env.JAWSDB_URL)
 
 } else {
-var sequelize = new Sequelize("database_development", "root", "root", {
+var sequelize = new Sequelize("database_development", "root", null, {
   host: "localhost",
   port: 3306,
   dialect: "mysql",

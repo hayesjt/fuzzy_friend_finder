@@ -33,3 +33,14 @@ li {
   .attention {
     color: red;
   }
+
+.poem {
+  text-align: center;
+}
+
+.rainbowbridge-item {
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  object-fit: none;
+}
