@@ -57,7 +57,7 @@ export const RainbowBridge = () => {
             Then you cross Rainbow Bridge together….”
             <br></br><br></br>
             — Author unknown</p>
-            <br></br><br></br><br></br>
+            <br></br><br></br>
             {/* Contact Info */}
             <Contact></Contact>
         </div>
