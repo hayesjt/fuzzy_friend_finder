@@ -1,12 +1,19 @@
 /* Nothing in this file working yet - need to come back before full production */
 
 .opps_card {
-    padding-top: 15px;
-    padding-bottom: 50px;
+    margin-top: 75px;
     justify-content: center;
     align-items: center;
 }
 
 .opps_text {
     text-align: center;
+}
+
+.catch-img {
+    width: 50%;
+    margin-top: 25px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
